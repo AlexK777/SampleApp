@@ -6,7 +6,7 @@
     "build-android": "cd android && ./gradlew assembleDebug assembleAndroidTest -DtestBuildType=debug && cd ..",
     "build-android-release": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release && cd ..",
     "build-ios": "xcodebuild -project ios/SampleApp.xcodeproj -scheme SampleApp -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build",
-    "build-ios-release": "xcodebuild -project ios/SampleApp.xcodeproj -scheme SampleApp -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+    "build-ios-release": "xcodebuild -project ios/SampleApp.xcodeproj -scheme SampleApp -configuration Release -UseModernBuildSystem=NO -sdk iphonesimulator -derivedDataPath ios/build",
     "start": "node node_modules/react-native/local-cli/cli.js start --reset-cache",
     "test": "jest",
     "test-android": "npx cucumber-js e2e/features -- platform=android",
