@@ -77,6 +77,8 @@ workflows:
                 # debug log
                 set -x
 
+                brew tap wix/brew
+                brew install AppleSimUtils
                 yarn install
                 yarn build-ios-release
                 yarn test-ios
