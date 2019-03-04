@@ -18,6 +18,16 @@ const instructions = Platform.select({
 
 type Props = {};
 export default class App extends Component<Props> {
+    constructor() {
+        super()
+        this.state = {
+            instructions
+        }
+    }
+    updateInstructions = () => {
+        this.setState({instructions: 'Instructions have been updated'});
+    };
+
     render() {
         return (
             <View style={styles.container}>
@@ -34,10 +44,11 @@ export default class App extends Component<Props> {
                     To get started, edit App.js
                 </Text>
                 <Text
+                    onPress={() => this.updateInstructions()}
                     style={styles.instructions}
                     testID="instructions"
                 >
-                    {instructions}
+                    {this.state.instructions}
                 </Text>
             </View>
         );

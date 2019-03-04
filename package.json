@@ -19,7 +19,7 @@
   "devDependencies": {
     "babel-jest": "23.6.0",
     "cucumber": "^5.0.3",
-    "detox": "^9.1.2",
+    "detox": "10.0.10",
     "jest": "23.6.0",
     "metro-react-native-babel-preset": "0.50.0",
     "react-test-renderer": "16.6.1",
@@ -41,7 +41,7 @@
     "iosConfig": {
       "configurations": {
         "ios": {
-          "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/SampleApp.app",
+          "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/SampleApp.app",
           "type": "ios.simulator",
           "name": "iPhone X"
         }
